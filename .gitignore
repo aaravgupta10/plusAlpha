@@ -1,0 +1,37 @@
+# =========================
+# +Alpha .gitignore
+# =========================
+
+# Security / Environment Variables
+.env
+.env.*
+
+# Virtual Environments
+alpha_env/
+venv/
+env/
+.venv/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Playwright & Browser Automation
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/

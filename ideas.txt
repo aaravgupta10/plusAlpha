@@ -1,0 +1,1 @@
+make a curve out of the risk gauge and test if it was accurately able to predict market crashes.
