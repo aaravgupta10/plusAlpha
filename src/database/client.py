@@ -3,7 +3,7 @@ from supabase import create_client, Client
 from dotenv import load_dotenv
 from src.utils.logger import get_logger
 
-load_dotenv()
+load_dotenv(override=True)
 logger = get_logger(__name__)
 
 def get_supabase_client() -> Client:
