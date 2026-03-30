@@ -17,7 +17,7 @@ SYSTEM_INSTRUCTION = (
 )
 
 def setup_gemini():
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY", "").strip().strip('"').strip("'")
     if not api_key:
         logger.critical("GEMINI_API_KEY missing from environment.")
         raise ValueError("Missing Gemini API Key.")

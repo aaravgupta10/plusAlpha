@@ -7,8 +7,8 @@ load_dotenv(override=True)
 logger = get_logger(__name__)
 
 def get_supabase_client() -> Client:
-    url = os.getenv("SUPABASE_URL")
-    key = os.getenv("SUPABASE_KEY")
+    url = os.getenv("SUPABASE_URL", "").strip().strip('"').strip("'")
+    key = os.getenv("SUPABASE_KEY", "").strip().strip('"').strip("'")
 
     if not url or not key:
         logger.critical("Supabase keys are missing.")
